@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('pokebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.card {
+    width: 330px;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    vertical-align: top;
+    background-color: black;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    padding: 1rem;
+    background: url(pokecardbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image img {
+    width: 100%;
+    display: inline-block;
+    position: center;
+}
+
+.details {
+    padding: 1rem;
+    background-color: #0056b3;
+    color: white;
+}
+
+#palkia {
+    background-color: blue;
+}
+
+#dialga {
+    background-color: grey;
+}
+
+#groudon {
+    background-color: #b49f41;
+}
+
+#kyogre {
+    background-color: blue;
+}
+
+#rayquaza {
+    background-color: #5A9BD5;
+}
+
+#giratina {
+    background-color: #4b377c;
+}
+
+#ground {
+    background-color: #85750f;
+}
+
+#flying {
+    background-color: #60b1f8;
+}
+
+#dragon {
+    background-color: #5636a5;
+}
+
+#steel {
+    background-color: silver;
+}
+
+#ghost {
+    background-color: #8663be;
+}
+
+#water {
+    background-color: #135ae7;
+}
+
+.names {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.type-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem 0;
+}
+
+.type {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.type1, .type2 {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+}
+
+.type1 {
+    background-color: #6F35FC; 
+}
+
+.type2 {
+    background-color: #6390F0; 
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.add, .release {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+.add:hover {
+    background-color: #0056b3;
+}
+
+.release {
+    background-color: #FF4136;
+}
+
+.release:hover {
+    background-color: #cc0000;
+}

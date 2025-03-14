@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 0.5s all;
+}
+
+body{
+    background-image: url(pokebg2.jpg);
+    background-size: cover;
+}
+
+.flex-container{  
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    
+}
+
+.icon{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+
+}
+
+img{
+    align-content: center;
+    width: 19vw; 
+    
+}
+
+.type-container{
+    display: none;
+}
+
+#fire{
+    width: 80px;
+    background-color: rgba(246, 123, 22, 0.838);
+    border-radius: 5px;
+}
+
+#water{
+    width: 80px;
+    background-color: rgba(22, 123, 246, 0.838);
+    border-radius: 5px;
+}
+
+#grass{
+    width: 80px;
+    background-color: rgba(90, 172, 24, 0.838);
+    border-radius: 5px;
+}
+
+#psychic{
+    width: 80px;
+    background-color: rgba(246, 22, 123, 0.838);
+    border-radius: 5px;
+}
+
+#normal{
+    width: 80px;
+    background-color: rgba(168, 151, 97, 0.838);
+    border-radius: 5px;
+}
+
+#dragon{
+    width: 80px;
+    background-color: rgba(102, 60, 191, 0.838);
+    border-radius: 5px;
+}
+
+#electric{
+    width: 80px;
+    background-color: rgba(169, 154, 41, 0.775);
+    border-radius: 5px;
+}
+
+#flying{
+    width: 80px;
+    background-color: rgba(149, 145, 133, 0.838);
+    border-radius: 5px;
+}
+
+#bug{
+    width: 80px;
+    background-color: rgba(86, 236, 63, 0.838);
+    border-radius: 5px;
+}
+
+.pokename{
+    display: none;
+}
+
+.pokeball{
+    display: none;
+}
+
+#charmander{
+    background-color: #FFAD40;
+    border-radius: 10px;
+
+}
+
+#squirtle{
+    background-color: #7FE5D8;
+    border-radius: 10px;
+
+}
+
+#bulbasaur{
+    background-color: #47C67B;
+    border-radius: 10px;
+
+}
+
+#mew{
+    background-color: #F4C4B3;
+    border-radius: 10px;
+
+}
+
+#snorlax{
+    background-color: #2a20b8;
+    border-radius: 10px;
+
+}
+
+#dratini{
+    background-color: #42B1E8;
+    border-radius: 10px;
+
+}
+
+#pikachu{
+    background-color:#FFF800;
+    border-radius: 10px;
+
+}
+
+#pidgey{
+    background-color: #F9CB58;
+    border-radius: 10px;
+
+}
+
+#eevee{
+    background-color: #D3964C;
+    border-radius: 10px;
+
+}
+
+#meowth{
+    background-color: #F2E9CF;
+    border-radius: 10px;
+
+}
+#psyduck{
+    background-color: #F0B535;
+    border-radius: 10px;
+
+}
+
+#weedle{
+    background-color: #d09d5b;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        display: flex;
+        width: 100%;
+        margin: 10px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        gap: 4px;
+    }   
+    
+    img {
+        max-width: 20%;
+        max-height: 20%;
+        overflow: hidden;
+    }
+    
+    .icon {
+        display: flex;
+        width: 90%;
+        margin: 10px;
+        align-items: center;
+        image-orientation: inherit;
+        content: inherit;
+        justify-content: space-between;
+    }
+
+    .icon:hover {    
+        background-image: url(pokemonbg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .pokeball {
+        display: block;
+        width: 10%;
+    }
+
+    .pokename{
+        display: block;
+        font-size: 200%;
+        font-family: Plus Jakarta Sans;
+        font-weight: bold;
+        color: white;
+        text-shadow: black 2px 2px 2px;
+    }
+
+    .type-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .flex-container {
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        gap: 10px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-items: center;
+    }   
+    
+    img {
+        max-width: 50%;
+        overflow: hidden;
+    }
+    
+    .icon {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        align-items: center;
+        image-orientation: inherit;
+        content: inherit;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .icon:hover {    
+        background-image: url(pokemonbg.jpg);
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .pokeball{
+        display: none;
+    }
+
+    .pokename{
+        display: block;
+        font-size: 200%;
+        font-family: Plus Jakarta Sans;
+        font-weight: bold;
+        color: white;
+        text-shadow: black 2px 2px 2px;
+    }
+
+    .type-container{
+        align-items: center;
+        display: flex;
+        margin: 5px;
+        color: white;
+        text-shadow: black 1px 1px 1px;
+    }
+
+    .type{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 5px;
+    }
+}
